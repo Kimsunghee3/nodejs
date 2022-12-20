@@ -18,13 +18,13 @@
       {% for item in items %}
       <tr>
         <td>{{loop.index}}</td>
-        <td><a href="/{{item.page}}/view?index={{loop.index-1}}">{{item.title}}</a></td>
+        <td><a href="/{{page}}/view?index={{loop.index-1}}">{{item.title}}</a></td>
         <td>{{item.nickname}}</td>
         <td>{{item.date}}</td>
         <td>{{item.views}}</td>
       </tr>
       {% endfor %}
     </table>
-    <a href="/{{item.page}}/write">글쓰기</a>
+    <a href="/{{page}}/write">글쓰기</a>
   </body>
 </html>

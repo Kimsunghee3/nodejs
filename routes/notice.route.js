@@ -1,13 +1,10 @@
 const express = require("express");
 const router = express.Router();
+const control = require("../controllers/notice.controller");
 
-router.get("/list", (req, res) => {
-  res.send("/notice/list page");
-});
+router.get("/list", control.list);
 
-router.get("/write", (req, res) => {
-  res.send("/notice/write page");
-});
+router.get("/write", control.getWrite);
 
 router.get("/view", (req, res) => {
   res.send("/notice/view page");
