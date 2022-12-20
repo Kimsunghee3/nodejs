@@ -6,12 +6,14 @@ router.get("/list", control.list);
 
 router.get("/write", control.getWrite);
 
-router.get("/view", (req, res) => {
-  res.send("/notice/view page");
-});
+router.post("/write", control.postWrite);
 
-router.get("/modify", (req, res) => {
-  res.send("/notice/modify");
-});
+router.get("/view", control.view);
+
+router.get("/modify", control.getModify);
+
+router.post("/modify", control.postModify);
+
+router.get("/delete", control.delete);
 
 module.exports = router;
