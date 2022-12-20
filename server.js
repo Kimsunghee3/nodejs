@@ -5,7 +5,7 @@ const nunjucks = require("nunjucks");
 
 app.set("view engine", "html");
 nunjucks.configure("views", {
-  express: app,
+    express: app,
 });
 
 app.use(express.static("public"));
@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(router);
 
 app.get("/", (req, res) => {
-  res.render("index.html");
+    res.render("index.html");
 });
 
 app.listen(3000, () => {
-  console.log(`server Start`);
+    console.log(`server Start`);
 });
