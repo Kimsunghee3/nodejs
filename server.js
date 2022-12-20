@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(router);
 
 app.get("/", (req, res) => {
-  res.send("/page");
+  res.render("index.html");
 });
 
 app.listen(3000, () => {
