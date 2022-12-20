@@ -6,7 +6,8 @@ itmes = {title: str, nickname: str, contents: str, date: str, views: str}
 
 ```
 |-- controllers
-|-- board.controller.js
+| |-- board.controller.js
+| |-- notice.controller.js
 |-- routes
 | |-- board.route.js
 | |-- notice.route.js
